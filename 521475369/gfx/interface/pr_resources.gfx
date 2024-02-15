@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_pr_psychosocial"
+		textureFile = "gfx/interface/icons/resources/pr_psychosocial.dds"
+	}
+}

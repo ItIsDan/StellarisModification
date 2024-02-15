@@ -1,0 +1,9 @@
+version="1"
+tags={
+	"Overhaul"
+	"Spaceships"
+	"Military"
+	"Gameplay"
+}
+name="PsioRem"
+supported_version="2.6.3"
