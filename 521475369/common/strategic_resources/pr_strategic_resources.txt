@@ -1,0 +1,10 @@
+pr_psychosocial = {
+		tratable = no
+		max = 15000
+		#prerequisites = {"tech_compute_psychosocial"}
+		#visibility_prerequesite = {always = yes}
+
+		ai_weight = {
+			weight = 150
+		}
+}
