@@ -1,10 +1,30 @@
+pr_strong = {
+	tradable = no
+	category = rare
+	max = 10000
+	prerequisites = { }
+	visibility_prerequesite = {always = yes}
+	ai_weight = { weight = 100}
+	ai_wants = {base = 10}
+}
+
+
+pr_middle = {
+	tradable = no
+	category = rare
+	max = 10000
+	prerequisites = { }
+	visibility_prerequesite = {always = yes}
+	ai_weight = { weight = 100}
+	ai_wants = {base = 10}
+}
+
 pr_psychosocial = {
 		tratable = no
-		max = 15000
-		#prerequisites = {"tech_compute_psychosocial"}
-		#visibility_prerequesite = {always = yes}
-
-		ai_weight = {
-			weight = 150
-		}
+		category = rare
+		max = 5000
+		prerequisites = { }
+		visibility_prerequesite = {always = yes}
+		ai_weight = { weight = 150 }	
+		ai_wants { base = 10 }
 }
