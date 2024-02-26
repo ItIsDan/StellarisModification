@@ -1,0 +1,49 @@
+############################
+#
+#
+#
+#
+############################
+
+building_psychoshit = {
+    base_buildtime = @b2_time
+    category = manufacturing
+
+    potential = {
+
+    }
+    
+    allow = {
+        has_upgraded_capital = yes
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 500
+            minerals = 1000
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    NOT = {
+                        has_deficit = alloys
+                    }
+                }
+            }
+            pr_psychosocial = 1
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+    prerequisites = {
+		"tech_psychoshit"
+	}
+	ai_resource_production = {
+		pr_psychosocial = @b3_rare_upkeep
+		trigger = {
+			always = yes
+		}
+	}    
+}

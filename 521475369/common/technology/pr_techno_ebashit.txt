@@ -1,0 +1,9 @@
+tech_psychoshit = {
+    cost = 1000
+    area = society
+    tier = 0
+    category = { psionics }
+    start_tech = yes
+
+    icon = tech_psionic_barrier
+}
