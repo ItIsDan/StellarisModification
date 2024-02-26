@@ -1,0 +1,33 @@
+####################################
+#
+#			Здесь был Диман
+#			
+#
+#
+#
+#####################################
+
+namespace = psycho
+
+	country_event = {
+		id = psycho.1
+		title = psycho.1.name
+		desc = psycho.1.desc
+		picture = GFX_evt_robot_assembly_plant
+		show_sound = event_laboratory_sound
+		location = root
+
+		is_triggered_only = yes
+
+		 	immediate = {
+ 		set_country_flag = robots_pacified
+ 	}
+
+		option = {
+		name = "psycho.1.a"
+		custom_tooltip = psycho.1.a.tooltip
+		 		hidden_effect = {
+ 			set_country_flag = ai_perfect_servants
+ 		}
+	}
+	}
