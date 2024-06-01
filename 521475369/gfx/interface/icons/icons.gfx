@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "tech_moduleman"
+		textureFile = "gfx\interface\icons\technologies\tech_moduleman.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "tech_armyman"
+		textureFile = "gfx\interface\icons\technologies\tech_armyman.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "tech_psychomid"
+		textureFile = "gfx\interface\icons\technologies\tech_psychomid.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "tech_psychostrong"
+		textureFile = "gfx\interface\icons\technologies\tech_psychostrong.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "tech_psychoweak"
+		textureFile = "gfx\interface\icons\technologies\tech_psychoweak.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "tech_traitsup"
+		textureFile = "gfx\interface\icons\technologies\tech_traitsup.dds"
+		noOfFrames = 1
+	}
+	
+}

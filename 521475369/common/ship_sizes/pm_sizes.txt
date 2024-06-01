@@ -1,0 +1,163 @@
+fighterman = {
+	formation_priority = @battleship_formation_priority
+	max_speed = 140
+	acceleration = 0.2
+	entity = battleship_entity
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = 15000
+	modifier = {
+		ship_evasion_add = 44
+		ship_piracy_suppression_add = 4
+		ship_hull_regen_add_perc = 0.25
+		weapon_type_explosive_weapon_damage_mult = 0.2
+	}
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_8
+	base_buildtime = @battleship_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = artillery
+	ship_roles = { artillery carrier gunship }
+
+	prerequisites = { "tech_moduleman" }
+
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 5
+			alloys = 3
+			pr_strong = 0.03
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 8
+	}
+}
+
+engineman = {
+	formation_priority = @battleship_formation_priority
+	max_speed = 140
+	acceleration = 0.2
+	entity = battleship_entity
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = 15000
+	modifier = {
+		ship_evasion_add = 44
+		ship_piracy_suppression_add = 4
+		ship_hull_add_perc = 0.25
+		ship_shield_add_perc = 0.25
+		weapon_type_explosive_weapon_damage_mult = 0.1
+		weapon_type_energy_weapon_damage_mult = 0.1
+	}
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_8
+	base_buildtime = @battleship_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = artillery
+	ship_roles = { artillery carrier gunship }
+
+	prerequisites = { "tech_moduleman" }
+
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 5
+			alloys = 3
+			pr_strong = 0.03
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 8
+	}
+}
+
+mageman = {
+	formation_priority = @battleship_formation_priority
+	max_speed = 140
+	acceleration = 0.2
+	entity = battleship_entity
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = 15000
+	modifier = {
+		ship_evasion_add = 44
+		ship_piracy_suppression_add = 4
+		ship_shield_add = 12500
+		weapon_type_energy_weapon_damage_mult = 0.1
+	}
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_8
+	base_buildtime = @battleship_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = artillery
+	ship_roles = { artillery carrier gunship }
+
+	prerequisites = { "tech_moduleman" }
+
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 5
+			alloys = 3
+			pr_strong = 0.03
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 8
+	}
+}

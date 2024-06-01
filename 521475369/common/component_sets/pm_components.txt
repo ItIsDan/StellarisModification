@@ -1,0 +1,20 @@
+component_set = {
+	key = "ENGINEER_MODULE" 
+
+	icon = "GFX_engineer_module"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "MAGE_MODULE"
+
+	icon = "GFX_mage_module"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "FIGHTER_MODULE"
+
+	icon = "GFX_fighter_module"
+	icon_frame = 1
+}

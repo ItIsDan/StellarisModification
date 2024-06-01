@@ -1,0 +1,26 @@
+trait_mt_supper = {
+	cost = 2
+	#initial = no
+	#randomized = no
+	improve_leaders = yes
+	icon = "Icons/trait_mt_supper.dds"
+
+	allowed_archetypes = {BIOLOGICAL}
+
+	modifier = {
+		faction_approval = 20 
+	}
+
+
+
+	#species_potential_add = {
+	#	can_add_cybernetic_traits = yes
+	#}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+}

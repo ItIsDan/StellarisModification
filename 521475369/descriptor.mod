@@ -6,4 +6,4 @@ tags={
 	"Gameplay"
 }
 name="PsioRem"
-supported_version="2.6.3"
+supported_version="3.10.4"

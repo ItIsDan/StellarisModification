@@ -1,0 +1,75 @@
+tech_psychoweak = {
+    cost = 15000
+    area = society
+    tier = 3
+    category = { psionics }
+    start_tech = no
+
+    icon = tech_science_nexus  
+}
+
+tech_psychomid = {
+    cost = 20000
+    area = society
+    tier = 4
+    category = { psionics }
+    start_tech = no
+    prerequisites = { tech_psychoshit }
+    weight = @tier1weight3
+
+    icon = tech_strategic_coordination  
+}
+
+tech_psychostrong = {
+
+    cost = 25000
+    area = society
+    tier = 5
+    category = { psionics }
+    start_tech = no
+    prerequisites = { tech_psychoshit }
+    weight = @tier1weight3
+
+    icon = tech_interstellar_assembly  
+
+}
+
+tech_armyman = {
+
+    cost = 10000
+    area = society
+    tier = 5
+    category = { psionics }
+    start_tech = no
+    prerequisites = { tech_psychoshit }
+    weight = @tier1weight3
+
+    icon = tech_hyper_relays  
+
+
+}
+
+tech_moduleman = {
+
+    cost = 12500
+    area = society
+    tier = 5
+    category = { psionics }
+    start_tech = no
+    prerequisites = { tech_psychoshit }
+    weight = @tier1weight3
+
+    icon = tech_colossus 
+}
+
+tech_traitsup = {
+    cost = 12500
+    area = society
+    tier = 5
+    category = { psionics }
+    start_tech = no
+    prerequisites = { }
+    weight = @tier1weight3
+
+    icon = tech_robomodding 
+}

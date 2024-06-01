@@ -1,0 +1,141 @@
+#More Traits: Classes mod#
+##########################
+
+
+trait_mt_talented_rulers = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_talented_rulers.dds"
+	custom_tooltip = trait_mt_talented_rulers_effect
+
+	opposites = {
+		trait_mt_rulers
+		trait_mt_specialists
+		trait_mt_talented_specialists
+		trait_mt_workers
+		trait_mt_talented_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.20
+		planet_jobs_worker_produces_mult = -0.20
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+}
+
+trait_mt_rulers = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_rulers.dds"
+	custom_tooltip = trait_mt_rulers_effect
+
+	opposites = {
+		trait_mt_talented_rulers
+		trait_mt_specialists
+		trait_mt_talented_specialists
+		trait_mt_workers
+		trait_mt_talented_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
+
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.10
+		planet_jobs_worker_produces_mult = -0.10
+	}
+}
+
+trait_mt_talented_specialists = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_talented_specialists.dds"
+	custom_tooltip = trait_mt_talented_specialists_effect
+
+	opposites = {
+		trait_mt_rulers
+		trait_mt_specialists
+		trait_mt_talented_rulers
+		trait_mt_workers
+		trait_mt_talented_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.20
+		planet_jobs_ruler_produces_mult = -0.10
+		planet_jobs_worker_produces_mult = -0.10
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+}
+
+trait_mt_specialists = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_specialists.dds"
+	custom_tooltip = trait_mt_specialists_effect
+
+	opposites = {
+		trait_mt_rulers
+		trait_mt_talented_specialists
+		trait_mt_talented_rulers
+		trait_mt_workers
+		trait_mt_talented_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
+
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.10
+		planet_jobs_ruler_produces_mult = -0.05
+		planet_jobs_worker_produces_mult = -0.05
+	}
+}
+
+trait_mt_talented_workers = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_talented_workers.dds"
+	custom_tooltip = trait_mt_talented_workers_effect
+
+	opposites = {
+		trait_mt_rulers
+		trait_mt_specialists
+		trait_mt_talented_specialists
+		trait_mt_talented_rulers
+		trait_mt_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.20
+		planet_jobs_ruler_produces_mult = -0.20
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+}
+
+trait_mt_workers = {
+	cost = 0
+	potential_crossbreeding_chance = 1.0
+	icon = "Icons/trait_mt_workers.dds"
+	custom_tooltip = trait_mt_workers_effect
+
+	opposites = {
+		trait_mt_rulers
+		trait_mt_specialists
+		trait_mt_talented_specialists
+		trait_mt_talented_rulers
+		trait_mt_talented_workers
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
+
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.10
+		planet_jobs_ruler_produces_mult = -0.10
+	}
+}
+
