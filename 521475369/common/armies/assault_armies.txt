@@ -1,0 +1,77 @@
+#You are in the army now!!
+
+fighterchad = {
+	damage = 2.50
+	health = 3.00
+	morale = 1.50
+	morale_damage = 1.00
+	collateral_damage = 0.95
+	war_exhaustion = 0.85
+	time = 120
+	icon_frame = 16
+	prerequisites = { tech_armyman }
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			pr_psychosocial = 1
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+}
+
+merlin = {
+	damage = 1.40
+	health = 2.50
+	morale = 2.00
+	morale_damage = 1.88
+	collateral_damage = 0.80
+	war_exhaustion = 0.95
+	time = 95
+	icon_frame = 17
+	prerequisites = { tech_armyman }
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+			alloys = 50
+			pr_psychosocial = 1
+		}
+
+		upkeep = {
+			energy = 0.85
+			food = 0.20
+		}
+	}
+}
+
+mechboiz = {
+	damage = 2.15
+	health = 1.80
+	morale = 1.50
+	morale_damage = 1.30
+	collateral_damage = 0.80
+	war_exhaustion = 0.95
+	time = 95
+	icon_frame = 18
+	prerequisites = { tech_armyman }
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+			alloys = 50
+			pr_psychosocial = 1
+		}
+
+		upkeep = {
+			energy = 0.85
+			alloys = 0.20
+		}
+	}
+}

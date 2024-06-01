@@ -1,0 +1,263 @@
+
+@ymts_fighter_01_collision_radius = 0.1
+@ymts_fighter_01_formation_priority = 1
+
+@ymts_fighter_01_acceleration = 0.6
+@ymts_fighter_01_rotation_speed = 0.6
+
+@ymts_fighter_01_hp = 70
+@ymts_fighter_01_evasion = 90
+@ymts_fighter_01_build_time = 15
+
+@ymts_fighter_01_upkeep_energy = 5
+@ymts_fighter_01_upkeep_alloys = 1
+
+@ymts_fighter_01_speed = 620
+
+
+
+
+@ymts_bomber_01_collision_radius = 0.1
+@ymts_bomber_01_formation_priority = 2
+
+@ymts_bomber_01_acceleration = 0.4
+@ymts_bomber_01_rotation_speed = 0.4
+
+@ymts_bomber_01_hp = 100
+@ymts_bomber_01_evasion = 75
+@ymts_bomber_01_build_time = 15
+
+@ymts_bomber_01_upkeep_energy = 5
+@ymts_bomber_01_upkeep_alloys = 1
+
+@ymts_bomber_01_speed = 580
+
+
+
+
+#######################################################################
+### ymts fighter
+#######################################################################
+
+ymts_fighter_01 = {
+	graphical_culture = no
+	#graphical_culture = { humanoid_01 }
+	entity = ymts_common_locator_entity
+	formation_priority = @ymts_fighter_01_formation_priority
+	max_speed = @ymts_fighter_01_speed
+	acceleration = @ymts_fighter_01_acceleration
+	rotation_speed = @ymts_fighter_01_rotation_speed
+	collision_radius = @ymts_fighter_01_collision_radius
+	max_hitpoints = @ymts_fighter_01_hp
+	modifier = {
+		ship_evasion_add = @ymts_fighter_01_evasion
+		ship_piracy_suppression_add = 4
+	}
+	size_multiplier = 1
+	combat_size_multiplier = 2
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = @ymts_fighter_01_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = swarm
+
+	prerequisites = { "tech_ymts_ship" }
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @ymts_fighter_01_upkeep_energy
+			alloys = @ymts_fighter_01_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+}
+
+
+ymts_fighter_02 = {
+	graphical_culture = no
+	#graphical_culture = { humanoid_01 }
+	entity = ymts_common_locator_entity
+	formation_priority = @ymts_fighter_01_formation_priority
+	max_speed = @ymts_fighter_01_speed
+	acceleration = @ymts_fighter_01_acceleration
+	rotation_speed = @ymts_fighter_01_rotation_speed
+	collision_radius = @ymts_fighter_01_collision_radius
+	max_hitpoints = @ymts_fighter_01_hp
+	modifier = {
+		ship_evasion_add = @ymts_fighter_01_evasion
+		ship_piracy_suppression_add = 4
+	}
+	size_multiplier = 1
+	combat_size_multiplier = 2
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = @ymts_fighter_01_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = swarm
+
+	prerequisites = { "tech_ymts_ship_nsc" }
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @ymts_fighter_01_upkeep_energy
+			alloys = @ymts_fighter_01_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+}
+
+#######################################################################
+### ymts bomber
+#######################################################################
+
+ymts_bomber_01 = {
+	graphical_culture = no
+	#graphical_culture = { humanoid_01 }
+	entity = ymts_common_locator_entity
+	formation_priority = @ymts_bomber_01_formation_priority
+	max_speed = @ymts_bomber_01_speed
+	acceleration = @ymts_bomber_01_acceleration
+	rotation_speed = @ymts_bomber_01_rotation_speed
+	collision_radius = @ymts_bomber_01_collision_radius
+	max_hitpoints = @ymts_bomber_01_hp
+	modifier = {
+		ship_evasion_add = @ymts_bomber_01_evasion
+		ship_piracy_suppression_add = 4
+	}
+	size_multiplier = 1
+	combat_size_multiplier = 2
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = @ymts_bomber_01_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = swarm
+
+	prerequisites = { "tech_ymts_ship" }
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @ymts_bomber_01_upkeep_energy
+			alloys = @ymts_bomber_01_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+}
+
+ymts_bomber_02 = {
+	graphical_culture = no
+	#graphical_culture = { humanoid_01 }
+	entity = ymts_common_locator_entity
+	formation_priority = @ymts_bomber_01_formation_priority
+	max_speed = @ymts_bomber_01_speed
+	acceleration = @ymts_bomber_01_acceleration
+	rotation_speed = @ymts_bomber_01_rotation_speed
+	collision_radius = @ymts_bomber_01_collision_radius
+	max_hitpoints = @ymts_bomber_01_hp
+	modifier = {
+		ship_evasion_add = @ymts_bomber_01_evasion
+		ship_piracy_suppression_add = 4
+	}
+	size_multiplier = 1
+	combat_size_multiplier = 2
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_military_1
+	base_buildtime = @ymts_bomber_01_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = swarm
+
+	prerequisites = { "tech_ymts_ship_nsc" }
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @ymts_bomber_01_upkeep_energy
+			alloys = @ymts_bomber_01_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+}
+
+

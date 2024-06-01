@@ -9,25 +9,95 @@
 
 namespace = psycho
 
+
 	country_event = {
 		id = psycho.1
 		title = psycho.1.name
 		desc = psycho.1.desc
-		picture = GFX_evt_robot_assembly_plant
+		picture = priga
 		show_sound = event_laboratory_sound
 		location = root
 
 		is_triggered_only = yes
-
+		
 		 	immediate = {
- 		set_country_flag = robots_pacified
- 	}
+ 					modify_species = {
+				species = this
+				add_trait = trait_mt_supper
+			}
+
+
+		trigger = {
+				has_technology = tech_traitsup
+		}
 
 		option = {
 		name = "psycho.1.a"
 		custom_tooltip = psycho.1.a.tooltip
+		
 		 		hidden_effect = {
- 			set_country_flag = ai_perfect_servants
+ 			 					modify_species = {
+				species = this
+				add_trait = trait_mt_supper
  		}
 	}
+}
+
+	country_event = {
+		id = psycho.2
+		title = psycho.2.name
+		desc = psycho.2.desc
+		picture = prig
+		show_sound = event_laboratory_sound
+		location = root
+
+		is_triggered_only = yes
+		trigger = {
+			OR = {
+				has_technology = tech_moduleman
+			}
+
+			
+		mean_time_to_happen = {
+			years = 6
+		}
+
+		}
+
+
+		option = {
+		name = "psycho.2.a"
+		custom_tooltip = psycho.2.a.tooltip
+		 		hidden_effect = {
+					create_fleet = {
+						effect = {
+							set_owner = prev
+									create_ship = {
+										name = random
+										random_existing_design = fighterman
+									}
+								}
+								set_location = prev.capital_star
+							}
+							owner = {
+								create_leader = {
+									class = commander
+									name = random
+									species = owner_main_species
+								}
+							}
+							last_created_leader = {
+								if = {
+									limit = {
+										has_skill > 1
+										num_traits = 0
+									}
+									add_trait_no_notify = random_common
+								}
+							}
+							set_leader = last_created_leader
+ 		}
+	}
+}
+		}
 	}

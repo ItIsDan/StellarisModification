@@ -1,7 +1,7 @@
 pr_strong = {
 	tradable = no
 	category = rare
-	max = 10000
+	max = 1000
 	prerequisites = { }
 	visibility_prerequesite = {always = yes}
 	ai_weight = { weight = 100}
@@ -12,7 +12,7 @@ pr_strong = {
 pr_middle = {
 	tradable = no
 	category = rare
-	max = 10000
+	max = 5000
 	prerequisites = { }
 	visibility_prerequesite = {always = yes}
 	ai_weight = { weight = 100}
@@ -22,7 +22,7 @@ pr_middle = {
 pr_psychosocial = {
 		tratable = no
 		category = rare
-		max = 5000
+		max = 10000
 		prerequisites = { }
 		visibility_prerequesite = {always = yes}
 		ai_weight = { weight = 150 }	

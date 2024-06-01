@@ -5,10 +5,13 @@
 #
 ############################
 
-building_psychoshit = {
+building_psychoweak = {
     base_buildtime = @b2_time
+	can_build = yes
     category = manufacturing
-
+	
+	
+	#icon = interface\icons\buildings
     potential = {
 
     }
@@ -31,14 +34,14 @@ building_psychoshit = {
                     }
                 }
             }
-            pr_psychosocial = 1
+            pr_psychosocial = 0.2
         }
         upkeep = {
             energy = 10
         }
     }
     prerequisites = {
-		"tech_psychoshit"
+		"tech_psychoweak"
 	}
 	ai_resource_production = {
 		pr_psychosocial = @b3_rare_upkeep
@@ -47,3 +50,97 @@ building_psychoshit = {
 		}
 	}    
 }
+
+building_psychomid = {
+    base_buildtime = @b3_time
+    can_build = yes
+    category = manufacturing
+
+    potential = {
+
+    }
+    
+    allow = {
+        has_upgraded_capital = yes
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 1000
+            minerals = 2500
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    NOT = {
+                        has_deficit = alloys
+                    }
+                }
+            }
+            pr_middle = 0.1
+        }
+        upkeep = {
+            energy = 20
+			pr_psychosocial = 1
+        }
+    }
+    prerequisites = {
+		"tech_psychomid"
+	}
+	ai_resource_production = {
+		pr_psychosocial = @b3_rare_upkeep
+		trigger = {
+			always = yes
+		}
+	}    
+    upgrades = {
+        building_psychosome
+    }
+}
+
+building_psychostrong = {
+    base_buildtime = @b3_time
+    can_build = yes
+    category = manufacturing
+
+    potential = {
+
+    }
+    
+    allow = {
+        has_upgraded_capital = yes
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 2500
+            minerals = 5000
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    NOT = {
+                        has_deficit = alloys
+                    }
+                }
+            }
+            pr_strong = 0.05
+        }
+        upkeep = {
+            energy = 30
+			pr_middle = 1
+        }
+    }
+    prerequisites = {
+		"tech_psychostrong"
+	}
+	ai_resource_production = {
+		pr_strong = @b3_rare_upkeep
+		trigger = {
+			always = yes
+		}
+	}    
+}
+

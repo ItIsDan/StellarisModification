@@ -1,0 +1,16 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "priga"
+        texturefile = "gfx/event_pictures/priga.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = no
+    }
+	
+	    spriteType = {
+        name = "prig"
+        texturefile = "gfx/event_pictures/prig.dds"
+        masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = no
+    }
+}

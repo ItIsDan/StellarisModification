@@ -1,0 +1,9 @@
+check_economic_production_modifier_for_job = {
+	pop_has_trait = trait_mt_supper
+	job = miner
+	resource = pr_psychosocial
+	resource = { energy = 0.5 } (for evaluating the bonuses to multiple resources, with weights)
+	species_modifiers_only = no (default: yes - only checks trait modifiers, trait triggered pop modifiers, and species habitability)
+	value > 1
+}
+

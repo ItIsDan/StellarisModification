@@ -1,0 +1,123 @@
+
+tech_ymts_ship= {
+	area = engineering
+	start_tech = no	
+	tier = @horizontechtier
+	cost = 0
+	category = { industry }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		OR = {
+		has_country_flag = flag_uncf_ship_active		
+		has_country_flag = flag_garmillas_ship_active
+		has_country_flag = flag_gatlantis_ship_active
+		has_country_flag = flag_dezarium_ship_active
+		has_country_flag = flag_bollar_ship_active
+		has_country_flag = flag_denguil_ship_active
+		has_country_flag = flag_sus_ship_active	
+		}
+		NOT = { has_global_flag = has_nsc_active }		
+	}
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_ymts_ship_nsc= {
+	area = engineering
+	start_tech = no	
+	tier = @horizontechtier
+	cost = 0
+	category = { industry }
+	ai_update_type = military
+	weight = 0
+	potential = {
+		OR = {
+		has_country_flag = flag_uncf_ship_active		
+		has_country_flag = flag_garmillas_ship_active
+		has_country_flag = flag_gatlantis_ship_active
+		has_country_flag = flag_dezarium_ship_active
+		has_country_flag = flag_bollar_ship_active
+		has_country_flag = flag_denguil_ship_active
+		has_country_flag = flag_sus_ship_active	
+		}
+		has_global_flag = has_nsc_active			
+	}
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_dezarium_ship= {
+	area = engineering
+	start_tech = no	
+	tier = @horizontechtier
+	cost = 0
+	category = { industry }
+	ai_update_type = military
+	weight = 0
+ 	potential = {
+		has_country_flag = flag_dezarium_ship_active
+	}
+	
+	weight_modifier = {
+		factor = 0
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_dezarium_ship2= {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { industry }
+	ai_update_type = military
+
+	weight = @tier1weight1
+
+	potential = {  
+		has_country_flag = flag_dezarium_ship_active
+		NOT = { has_global_flag = has_nsc_active }
+	}
+	
+	ai_weight = {
+		factor = 0		#weapons are good
+	}
+}
+
+tech_dezarium_ship3= {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { industry }
+	ai_update_type = military
+
+	weight = @tier1weight1
+
+	potential = {  
+		has_country_flag = flag_dezarium_ship_active
+		has_global_flag = has_nsc_active		
+	}
+	
+	ai_weight = {
+		factor = 0		#weapons are good
+	}
+}
