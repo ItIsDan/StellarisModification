@@ -1,6 +1,6 @@
 ####################################
 #
-#			Здесь был Диман
+#			
 #			
 #
 #
@@ -42,7 +42,8 @@ namespace = psycho
  		}
 	}
 }
-
+}
+}
 	country_event = {
 		id = psycho.2
 		title = psycho.2.name
@@ -99,5 +100,57 @@ namespace = psycho
  		}
 	}
 }
+
+country_event = {
+		id = psycho.2
+		title = psycho.2.name
+		desc = psycho.2.desc
+		picture = prig
+		show_sound = event_laboratory_sound
+		location = root
+
+		is_triggered_only = yes
+		trigger = {
+			OR = {
+				has_technology = tech_moduleman
+			}
+
+			
+		mean_time_to_happen = {
+			years = 6
 		}
+
+		}
+
+
+		option = {
+		name = "psycho.3.a"
+		custom_tooltip = psycho.3.a.tooltip
+		 		hidden_effect = {
+					create_fleet = {
+						effect = {
+							set_owner = prev
+								}
+								set_location = prev.capital_star
+							}
+							owner = {
+								create_leader = {
+									class = scientist
+									name = random
+									species = owner_main_species
+								}
+							}
+							last_created_leader = {
+								if = {
+									limit = {
+										has_skill > 1
+										num_traits = 0
+									}
+									add_trait_no_notify = random_common
+								}
+							}
+							set_leader = last_created_leader
+ 		}
 	}
+}
+
